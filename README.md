@@ -99,3 +99,5 @@ git push
 ## 5. Consume API
 
 `npm install axios`
+
+`npm run deploy`
