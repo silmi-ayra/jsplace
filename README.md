@@ -31,13 +31,13 @@ Your app is ready to be deployed!
 
 echo "# jsplace" >> README.md
 git init
-git add README.md
+git add .
 git commit -m "first commit"
 git branch -M main
 git remote add origin git@github.com:silmi-ayra/jsplace.git
 git push -u origin main
 
-## 2. Coba deploy
+## 2. Edit App.js
 
 ```
 import logo from './logo.svg';
@@ -53,4 +53,45 @@ function App() {
 
 export default App;
 
+```
+
+## 3. Coba deploy github multi accoun >> silmi
+
+```
+git remote rm origin
+git remote add origin git@github.com-silmi:silmi-ayra/jsplace.git
+```
+
+## 4. Buat branch untuk deploy github pages
+
+`git branch git-pages`
+
+`npm install gh-pages --save-dev`
+
+pada package.json
+
+```
+{
+  "homepage": "http://silmi-ayra.github.io/jsplace",
+  "name": "jsomplace1",
+
+  ....
+},
+
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d build"
+  },
+```
+
+kemudian deploy :
+
+```
+git add .
+git commit -m "setup gh-pages"
+git push
 ```
