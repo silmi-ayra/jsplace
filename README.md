@@ -94,4 +94,18 @@ kemudian deploy :
 git add .
 git commit -m "setup gh-pages"
 git push
+
+npm run deploy
 ```
+
+github >> setting >> pages
+
+branch >> gh-pages >> /(root) >> save
+
+`https://silmi-ayra.github.io/jsplace/`
+
+referensi :
+
+https://www.youtube.com/watch?v=Q9n2mLqXFpU
+
+https://blog.logrocket.com/deploying-react-apps-github-pages/
