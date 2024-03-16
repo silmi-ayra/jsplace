@@ -101,3 +101,5 @@ git push
 `npm install axios`
 
 `npm run deploy`
+
+## 6. Consume API Satusehat
